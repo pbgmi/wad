@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>j mobile</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    
+</head>
+<body>
+      <div data-role = "page" id = "page1" data-theme = "b" >
+         <div data-role = "panel" id = "panel1">
+            <h2>Hello new user</h2>
+            <p>Please Sign up</p>
+         </div>
+         
+         <div data-role = "main" class = "ui-content">
+            <a href = "#panel1" data-role="button" >Open Panel</a>
+
+         </div>
+
+      
+        <div data-role="content">
+        <a href="#alert" data-role="button" data-rel="dialog" data-transition="pop" data-inline="true"> Sign up </a>
+        </div>
+
+        
+      
+    </div>
+<div data-role="page" id="alert" data-dialog="true" data-theme="b">
+        
+<div data-role="header">
+            <h1> Input Format </h1>
+        </div>
+        <div data-role="content">
+<form>
+<h2>Create an account</h2>
+
+<label>Email input </label>
+<input type="email" data-clear-btn="false">
+
+<label>Password input </label>
+<input type="password" data-clear-btn="false">
+
+</form>
+<a href="#page1" data-role="button"> Sign Up </a>
+</div>
+</div>
+   </body>
+</html>
